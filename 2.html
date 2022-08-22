@@ -1,9 +1,58 @@
 <!DOCTYPE html>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PK4F2V3');</script>
+  <!-- End Google Tag Manager -->
 <!--
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "1e919b31-aa61-41f5-8fb2-0f50e4b6347c"
+  });
+</script>
+<!-- End Channel Plugin -->
 <html>
   <head>
     <title>혼동 어휘장 구매</title>
@@ -35,15 +84,21 @@
             <header class="main">
               <h1>
                 혼동 어휘장 구매 &nbsp &nbsp &nbsp &nbsp &nbsp 
-                <a href="#" class="button small">Click해서 구매하기</a>
+                <a href="https://transfer.channel.io" class="button small">Click해서 구매하기</a>
               </h1>
             </header>
 
+
+            <p style="text-align: center"><span style="font-size: 14px"> 
+              가격 : 5000원 <br> 커피 한 잔 값으로 영단어 실력을 향상시키세요!</span></p>
             <span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+            <!-- Scroll 유도 -->
+            <div class="scroll"></div>          
 
             <hr class="major" />
 
             <h2>성대 편입의 비법, 혼동 어휘장</h2>
+            
             <p style="text-align: center"><strong>QUIZ</strong></p>
             <p style="text-align: center">excrete / execute / execrate</p>
             <p style="text-align: center">rummage / scrimmage</p>
@@ -68,7 +123,7 @@
             <hr class="major" />
 
             <h2>다른 글도 구경하세요!</h2>
-            <p><span style="font-size: 16px">기타 자료에서 합격 후기, D시리즈 성적 추이 등을 확인하세요</span></p>
+            <p><span style="font-size: 16px"><a href="3.html">기타 자료</a>에서 합격 후기, D시리즈 성적 추이 등을 확인하세요</span></p>
             <p><span style="font-size: 16px">앞으로 올라 올 기출 성적 추이, 시험 후기가 궁금하시다면 언제든 방문해주세요</span></p>
           </section>
         </div>
@@ -77,12 +132,12 @@
       <!-- Sidebar -->
       <div id="sidebar">
         <div class="inner">
-          <!-- Search -->
+          <!-- Search
           <section id="search" class="alt">
             <form method="post" action="#">
               <input type="text" name="query" id="query" placeholder="Search" />
             </form>
-          </section>
+          </section> -->
 
           <!-- Menu -->
           <nav id="menu">
@@ -91,7 +146,7 @@
             </header>
             <ul>
               <li><a href="index.html">Main</a></li>
-              <li><a href="혼동 어휘장 구매.html">혼동 어휘장 구매</a></li>
+              <li><a href="2.html">혼동 어휘장 구매</a></li>
               <li><a href="3.html">기타 자료</a></li>
               <!-- <li>
                 <span class="opener">Submenu</span>
@@ -133,7 +188,7 @@
               <h2>Get in touch</h2>
             </header>
             <p>
-              편입 관련 고민 상담이 있으신가요? 혼동 어휘장 구매와 상담을 한번에 해결하세요.
+              편입 관련 고민 상담이 있으신가요?<br>혼동 어휘장 구매와 상담을 한번에 해결하세요.</br>
             </p>
             <ul class="contact">
               <li class="icon solid fa-phone">open kakao chatroom</li>
@@ -158,4 +213,8 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK4F2V3"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 </html>

@@ -11,6 +11,49 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<!-- Channel Plugin Scripts 채널톡 -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "1e919b31-aa61-41f5-8fb2-0f50e4b6347c"
+  });
+</script>
+<!-- End Channel Plugin -->
+
 <html>
   <head>
     <title>기타 자료</title>
@@ -100,7 +143,10 @@
           <!-- Section -->
           <section>
             <header class="major">
-              <h2>유용한 편입 글들을 읽어보세요</h2>
+              <h2>
+                유용한 편입 글들을 읽어보세요 &nbsp
+                <a href="2.html" class="button small">혼동어휘장 구매하기</a>
+              </h2>
             </header>
             <div class="posts">
               <article>

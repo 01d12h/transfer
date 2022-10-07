@@ -11,48 +11,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<!-- Channel Plugin Scripts 채널톡 -->
-<script>
-  (function() {
-    var w = window;
-    if (w.ChannelIO) {
-      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
-    }
-    var ch = function() {
-      ch.c(arguments);
-    };
-    ch.q = [];
-    ch.c = function(args) {
-      ch.q.push(args);
-    };
-    w.ChannelIO = ch;
-    function l() {
-      if (w.ChannelIOInitialized) {
-        return;
-      }
-      w.ChannelIOInitialized = true;
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-      s.charset = 'UTF-8';
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    }
-    if (document.readyState === 'complete') {
-      l();
-    } else if (window.attachEvent) {
-      window.attachEvent('onload', l);
-    } else {
-      window.addEventListener('DOMContentLoaded', l, false);
-      window.addEventListener('load', l, false);
-    }
-  })();
-  ChannelIO('boot', {
-    "pluginKey": "1e919b31-aa61-41f5-8fb2-0f50e4b6347c"
-  });
-</script>
-<!-- End Channel Plugin -->
+
 
 <html>
   <head>
@@ -85,7 +44,7 @@
             <header class="main">
               <h1>
                 혼동 어휘장 구매 &nbsp &nbsp &nbsp &nbsp &nbsp 
-                <a href="https://transfer.channel.io" class="button small">Click해서 구매하기</a>
+                <a href="http://pf.kakao.com/_QtBxdxj" class="button small">Click해서 구매하기</a>
               </h1>
             </header>
 
@@ -192,9 +151,10 @@
               편입 관련 고민 상담이 있으신가요?<br>혼동 어휘장 구매와 상담을 한번에 해결하세요.</br>
             </p>
             <ul class="contact">
-              <li class="icon solid fa-phone">open kakao chatroom</li>
-              <li class="icon brands fab fa-internet-explorer ">
-                blog.naver.com/malibrary
+              <li class="icon solid fa-phone"><a href ="http://pf.kakao.com/_QtBxdxj">
+                카카오 채팅하기 </a></li>
+              <li class="icon brands fab fa-internet-explorer "><a href ="blog.naver.com/malibrary">
+                블로그 방문하기 </a>
               </li>
             </ul>
           </section>
